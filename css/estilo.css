@@ -332,11 +332,11 @@ section img {
 .conteudo-cartao img {
     display: flex;
     position: relative;
-    margin-top: 10px;
     width: 200px;
     align-items: center;
     justify-content: center;
     margin: auto;
+    padding-top: 10px;
 }
 
 .conteudo-cartao h3, p {
