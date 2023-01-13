@@ -330,10 +330,13 @@ section img {
 }
 
 .conteudo-cartao img {
+    display: flex;
     position: relative;
     margin-top: 10px;
     width: 200px;
-    left: 13%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .conteudo-cartao h3, p {
