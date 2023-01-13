@@ -178,7 +178,8 @@ section img {
 }
 
 .link-question {
-    margin-right: 50px;
+    position: relative;
+    margin: auto;
     width: 180px;
     height: 130px;
     border: 1px solid rgb(184, 181, 181);
@@ -332,7 +333,7 @@ section img {
     position: relative;
     margin-top: 10px;
     width: 200px;
-    left: 70px;
+    left: 35px;
 }
 
 .conteudo-cartao h3, p {
