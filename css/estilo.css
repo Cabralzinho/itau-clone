@@ -1,0 +1,369 @@
+/*Corpo todo*/
+
+:root {
+    --laranja:rgb(233, 107, 4);
+    --branco: #fff;
+    --azul-lindo: #0049ca;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--laranja);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul-lindo);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    width: 100%;
+    scroll-behavior: red;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/*Barra de navegação*/
+
+nav {
+    position: fixed;
+    z-index: 20;
+    width: 100%;
+}
+
+nav, #conteudo-nav {
+    display: flex;
+    background: var(--laranja);
+    padding: 8px 55px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#padding-imagem {
+    padding-right: 40px;
+}
+
+.nav-letra {
+    color: var(--branco);
+    font-size: 17.5px;
+    padding-right: 20px;
+}
+
+.nav-letra-2 {
+    color: var(--branco);
+    font-size: 17.5px;
+    padding-right: 50px;
+}
+
+#border-1 {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#border-1:hover {
+    background: var(--branco);
+    color: var(--laranja);
+}
+
+#input-nav input {
+    text-align: center;
+    height: 42px;
+    width: 82px;
+    color: gray;
+    border: 0;
+
+}
+
+#conta {
+    border-radius: 0 5px 5px 0;
+}
+
+#agencia {
+    border-radius: 5px 0 0 5px;
+}
+
+#submit-nav {
+    color: var(--branco);
+    background: rgba(235, 233, 233, 0.842);
+    width: 55px;
+    margin-left: 5px;
+    font-size: 28px;
+    border: 0;
+    border-radius: 5px;
+}
+
+/*section com imagem*/
+
+section {
+    color: var(--branco);
+    position: relative;
+    width: 100%;
+    height: 540px;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    
+}
+
+#cartao-credito {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin-left: 250px;
+}
+
+#cartao-credito div {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+    width: 380px;
+}
+
+#cartao-credito div p {
+    margin: 10px 0 50px 0;
+}
+
+#cartao-credito div button {
+    color: var(--branco);
+    background: rgba(0, 0, 0, 0.37);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 130px;
+    height: 30px;
+}
+
+#cartao-credito div button:hover {
+    color: black;
+    background: rgb(228, 209, 170);
+    transition: 0.5s;
+}
+
+/*Question day*/
+
+.tittle-all {
+    font-size: 30px;
+    padding-left: 80px;
+}
+
+#question-day {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 30px;
+}
+
+.link-question {
+    margin-right: 50px;
+    width: 180px;
+    height: 130px;
+    border: 1px solid rgb(184, 181, 181);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.link-question span {
+    color: rgb(88, 88, 88);
+}
+
+.link-question a{
+    color: black;
+}
+
+.link-question:hover {
+    border: 1px solid rgb(236, 154, 2);
+}
+
+.link-question:hover a i {
+    color: rgb(236, 154, 2);
+}
+
+.icon-question {
+    font-size: 16px;
+}
+
+/*Contrate produtos*/
+
+#contrate-tittle {
+    padding-top: 50px;
+    margin-left: 80px;
+    line-height: 15px;
+}
+
+#contrate-tittle span {
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.card {
+    justify-content: space-between;
+    overflow: hidden;
+    border: 1px solid rgba(202, 202, 202, 0.911);
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    height: 300px;
+    margin: 20px;
+    
+}
+
+@media (max-width: 1200px)
+{
+  .card
+   {
+    width: 100%;
+   }
+}
+
+.card:first-child {
+    width: 100%;
+}
+
+#itau-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.button {
+    background: none;
+    width: 130px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.button:hover {
+    background: rgba(228, 228, 228, 0.884);
+}
+
+.conteudo-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.conteudo-produtos div span {
+    font-size: 15.5px;
+    margin-left: 5px;
+    line-height: 30px;
+}
+
+.conteudo-produtos div p {
+    color: rgb(105, 105, 105);
+    font-size: 17.4px;
+    margin-top: 15px;
+}
+
+/* Cartões de créditos */
+
+#cartoes-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#cartoes-tittle {
+    margin-left: 80px;
+}
+
+.card-cartao {
+    position: relative;
+    justify-content: space-between;
+    border: 1px solid rgb(135, 155, 155);
+    border-radius: 5px;
+    width: calc(24% - 40px);
+    height: 550px;
+    margin: 10px;
+    margin-left: 30px;
+    left: 17px;
+}
+
+.card-cartao:hover {
+    border: 1.5px solid var(--laranja);
+    transform: scale(1.03);
+}
+
+@media (max-width: 1200px)
+{
+  .card-cartao
+   {
+    width: 100%;
+   }
+}
+
+.conteudo-cartao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.conteudo-cartao img {
+    position: relative;
+    margin-top: 10px;
+    width: 200px;
+    left: 70px;
+}
+
+.conteudo-cartao h3, p {
+    margin-left: 15px;
+}
+
+.conteudo-cartao h3 {
+    font-size: 18.5px;
+    margin-top: 45px;
+}
+
+.conteudo-cartao p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(94, 93, 93);
+}
+
+.card-cartao button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-top: 25px;
+    background: none;
+    width: 94%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.card-cartao button:hover {
+    background: rgba(228, 228, 228, 0.884);
+}
+
+/* Jogos XBOX */
