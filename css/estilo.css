@@ -339,7 +339,7 @@ section img {
     padding-top: 10px;
 }
 
-.conteudo-cartao h3, p {
+.conteudo-cartao h3, .conteudo-cartao p {
     margin-left: 15px;
 }
 
@@ -371,3 +371,149 @@ section img {
 }
 
 /* Jogos XBOX */
+
+#xbox-container {
+    display: flex;
+    position: relative;
+    padding-left: 46px;
+    width: 100%;
+    height: 100%;
+    padding-top: 35px;
+}
+
+#xbox-container img {
+    border-radius: 8px;
+}
+
+#conteudo-xbox {
+    position: absolute;
+    left: 650px;
+    margin-top: 40px;
+    margin-right: 70px;
+    height: 190px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#conteudo-xbox > * {
+    margin: 15px 0 0 0px;
+}
+
+#conteudo-xbox i, #conteudo-xbox h3, #conteudo-xbox p, #conteudo-xbox button  {
+    margin-left: 18px;
+}
+
+#conteudo-xbox span {
+    font-size: 15px;
+}
+
+#conteudo-xbox h3 {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+#conteudo-xbox p {
+    font-size: 18.4px;
+    color: rgba(0, 0, 0, 0.671);
+}
+
+#conteudo-xbox button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 120px;
+}
+
+#conteudo-xbox button:hover {
+    background: rgb(235, 230, 230);
+}
+
+/* Inteligência financeira */
+
+#investimento-tittle {
+    padding-top: 60px;
+    margin-left: 15px;
+}
+
+#investimento-tittle h2 {
+    font-size: 30px;
+    color: var(--laranja);
+    padding: 20px 0 40px 0;
+}
+
+#inteligencia-financeira {
+    display: flex;
+    justify-content: space-between;  
+}
+
+.card-investimento {
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(26% - 40px);
+    height: 340px;
+    margin: auto;
+}
+
+.investimento-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.investimento-conteudo img {
+    width: 300px;
+}
+
+.investimento-conteudo h3, .investimento-conteudo p, .investimento-conteudo a {
+    height: 80px;
+    padding-left: 15px;
+}
+
+.investimento-conteudo h3 {
+    padding-top: 20px;
+    width: 250px;
+}
+
+.investimento-conteudo p {
+    font-size: 17.4px;
+    font-weight: 550;
+    color: rgba(0, 0, 0, 0.856);
+    width: 280px;
+}
+
+.investimento-conteudo a {
+    font-weight: 600;
+    color: rgb(18, 63, 129);
+    padding-bottom: 50px;
+}
+
+.investimento-conteudo a:hover {
+    color: rgb(0, 110, 255);
+}
+
+/* Button acesse o site */
+
+#button-acesse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#button-acesse button {
+    background: var(--laranja);
+    border: none;
+    border-radius: 3px;
+    padding: 13px;
+    width: 25%;
+    font-size: 18px;
+    color: white;
+}
+
+#button-acesse button:hover {
+    background: rgb(211, 102, 0);
+}
